@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!-- menuliskan versi HTML -->
+<html lang="id">
+<head>
+<title>property float</title
+</head>
+  <style>
+  	body{
+  	background-color:#D0F0C0;
+  	}
+  	
+  <!--element untuk menuliskan kode css -->
+    
+   </style>
+   
+    <style>
+    	marquee{
+    	font-size:25px;
+    	}
+    	
+   
+   .header{
+    background-color:rgb(255,0,0);
+     padding:100px;
+     border:3px solid white;
+     margin:1px 1px auto;
+     /*margin adalah area transparan diluar border
+     atas:1px;
+       bawah:1px;
+       kiri dan kanan=auto/mengikuti sebelumnya*/
+      }
+   
+    
+    
+    .header-logo{
+       float:left;
+       padding-top:30px;
+       <!-- 30 -->
+       padding-right:10px;
+       
+       }
+
+    li{
+     font-size:25px;
+     <!-- 25px -->
+     
+    	float:left;
+   list-style:none;
+    padding:
+    <!-- 20px 10px 10px  5px -->
+    }
+    
+  .main{
+   background-color:blue;
+   height:400px;
+   border:3px solid white;
+   margin:1px 1px auto;
+   //margin adalah area transparan diluar border//
+   
+      }
+          .copy-container h1{
+         
+          color:white;
+         font-size:26px;
+         font-family:cursive;
+         font-style:bold;
+         text-align:center;
+         text-shadow:2px 2px black;
+         display:block;
+         }
+         
+         .contents h2
+          {
+         color:white;
+         font-size:20px;
+         font-family:cursive;
+         text-align:center;
+         font-style:bold;
+         text-shadow:2px 2px red;
+         text-style:bold;
+         display:block;
+         overflow:visible;
+           }
+        
+           .contents-items h3{
+          color:white;
+          text-align:center;
+          font-size:20px;
+          font-family:Candara;
+          display:block;
+          overflow:visible;
+            }
+       
+    
+        .contact-form h4
+          {
+          color:white;
+          font-family:"roboto";
+          font-size:22px;
+          text-align:center;
+          }
+          
+          
+       
+          
+              
+          
+           span{
+           color:#fff719;
+            }
+         
+          
+        
+     .footer{
+    background-color:yellow;
+     height:120px;
+    border:3px solid white;
+    margin:1px 1px auto;
+    //margin adalah area transparan diluar border//
+     
+      }
+      .footer-logo{
+     
+        float:left;
+        padding-top:10px;
+        padding-left:5px;
+       
+         }
+         
+        li{
+        
+        font-size:25px;
+        float:right;
+        list-style:none;
+        padding:10px 5px 5px;
+         }
+         
+         a:link{
+         color:white;
+         }
+        a:hover{
+         color:green;
+       <!-- ketika link diklik,maka akan berubah warna -->
+         }
+         a:visited
+         {
+          color:white;
+           }
+           legend{
+           font-size:30px;
+           color:white;
+           }
+           textarea{
+           border:10px dashed red;
+           overflow:scrool;
+           }
+           
+        /* article{
+         color:white;
+         font-size:22px;
+         }*/
+        </style>
+        
+           <style>
+           		
+           		
+           	.icon{
+           	font-size:40px;
+           	}
+           	   </style>
+           	   <style>
+           	   .btn{
+          
+           	  color:black;
+           	  border:3px solid white;
+           	  font-size:20px;
+           	  
+           	  border:none;
+           	  }
+           	  .btn:hover{
+           	  box-shadow:0px 5px 10px white;
+           	  }
+           	   </style>
+           	   <style>
+           	    .search{
+           	    padding:8px 10px;
+           	    background-color:white;
+           	    border:3px solid red;
+           	    margin:5px;
+           	    
+           	    
+           	     }
+           	     .button{
+           	     position:relative;
+           	     border:0 solid red;
+           	     background-color:yellow;
+           	    padding:10px 15px;
+           	     border-radius:4px;
+           	     left:-6px;
+           	     font-family:arial;
+           	     font-size:20px;
+           	     color:black;
+           	     }
+           	     .button:hover{
+           	     background-color:yellow;
+           	      }
+           	      .button:active{
+           	      background-color:white;
+           	        }
+           	      footer{
+           	
+           	      font-size:25px;
+           	      font-family:arial;
+           	      text-align:center;
+           	      
+           	       }
+           	      
+           	   </style>
+         
+     <body>
+     	<!-- tempat  kita menuliskan konten -->
+     	<script>
+     /*timing events:
+     algoritma:alert akan mucncul
+     	  setelah wkt yg ditetapkan
+     	 dalam satuan milisenconds
+     	 1000miliseconds=1detik
+     	 
+     	 */
+     	  
+     	setTimeout(function()
+ //anonym function:tidak perlu declaration function//
+     			{
+     	alert("welcome to site");
+     	//tampilkan pemberitahuan//
+     	//window.alert():objek global//
+     	},500);
+     	//set duration//
+     	 
+     	
+     	document.write("tugas P.D nama:stevanus.Kelas:X-MM4");
+     	/*document.write adalah DOM API(Data          
+     		object model).		
+     	 Javascript: tolong tuliskan dan tampilkan pesan saya ini pada halaman website/html*/
+   
+     	</script>
+     	
+     	<hr>
+     	<marquee>Tugas Saya Telah Diselesaikan
+     	</marquee>
+     	</hr>
+     	       <hr>
+     	            <form name="Tick"> 
+<input type="text" size="30" name="Clock"> 
+</form>
+     
+     					<script>
+     				<!-- declaration -->
+		 /*	var today=new Date()
+			
+			var month=today.getMonth()
+	    
+	    
+		  
+			
+			<!-- menampilkan pada halaman -->
+			document.write("Now:")
+			
+document.write(today+"/"+month+"/")*/
+function show() 
+{ 
+var Digital=new Date() 
+var hours=Digital.getHours() 
+var minutes=Digital.getMinutes() 
+var seconds=Digital.getSeconds() 
+var dn="AM" 
+if (hours>12){ 
+ dn="PM" 
+ hours=hours-12 
+} 
+if (hours==0) 
+hours=12 
+if (minutes<=9) 
+minutes="0"+minutes 
+if (seconds<=9) 
+seconds="0"+seconds 
+document.Tick.Clock.value= 
+hours+":"+minutes+":"+seconds+" "+dn 
+setTimeout("show()",1000)
+}
+show();
+  
+				</script>
+     			</hr>
+     					
+     
+     
+     <!-- psnggil class header dari CSS-->
+     <span class="icon" onclick="setDarkMode(false)"><button>Light Mode
+</button>
+ </span>
+ 
+<span class="icon" onclick="setDarkMode(true)">
+	<button>Dark Mode
+	</button>
+	</span>
+	
+				<style>
+					
+	       #darkmode{
+           background:rgb(27, 27, 27);
+           color:white;
+           
+           }
+             #darkmode button{
+             background:red;
+             font-size:25px;
+             border-radius:5px;
+             
+             }
+             
+          </style>
+ 
+
+<!--document.body.setAttribute-->
+   
+<script>
+if(localStorage.getItem('theme')=='dark')
+{
+   setDarkMode(true)
+   }
+function setDarkMode(isDark)
+{
+if(isDark)
+{
+document.body.setAttribute('id','darkmode')
+localStorage.setItem('theme','dark')
+} else{
+   document.body.setAttribute ('id',' ')
+   localStorage.removeItem('theme','  ')
+   //tidak perlu membuat paramater baru//
+   
+   }
+  }
+
+<!--document.body.setAttribute-->
+   
+ </script> 
+ 
+       <script>
+			
+ </script>
+ 
+
+ 
+ 
+
+     
+     <form>
+     <input class="search" placeholder="🔍cari sesuatu??cari disini"><input class="button" type="submit" value="search"/>
+     </form>
+
+ 
+
+   
+   <div class="header">
+
+   			
+ <div class="header-logo">
+ <img src= "https://upload.wikimedia.org/wikipedia/id/0/04/Logo_Indomaret.svg" width="170"height="70">
+ 
+ </div>
+
+ 	<!-- akan memanggil class header-list dari CSS-->
+      <!-- membuat list-->
+     <div class="header-list">
+    <ul>
+   <a href="filehtml1.html">
+   <li> profile
+    </li>
+    </a>
+      <a href="filehtml2.html">
+      <li>
+      produk 
+      </li>
+      </a>
+     <a href="filehtml3.html">
+     <li>promo
+     </li>
+     </a>
+        <a href="filehtml4.html">
+     <li>layanan
+     </li>
+     </a>
+     <a href="Hubungi kami.html">
+     <li>hubungi kami
+     </li>
+     </a>
+    <a href="filehtml6.html">
+     <li>Akun</li>
+   
+     </a>
+      </ul>
+      
+
+ </div>
+ </div>
+ 
+
+ 	
+ <div class="main">
+ 				   			
+    <div class="copy-container">
+      				<strong>
+ 	 	<h1>Selamat Datang Di Indomaret </h1>
+      </div>
+ 				</strong>
+      	 	<div class="contents">
+	 	  	   <h2>Selamat Berbelanja</h2>
+	 	  	   </div>
+	 	  <div class="contents-items"> 
+	 	  <h3>Silahkan Dipilih </h3>
+	 
+	    <table border="2" align="center">
+	    				
+	    <th colspan="8" bgcolor="red">Sekilas produk
+	    <tr>
+	 	 </th> 
+	 	 </tr>
+	 	 <tr> 
+	 	 <td rowspan="4">
+	 	 				<a href="#!">
+	  <img src=" https://assets.klikindomaret.com/products/20044008/20044008_1.jpg" width="120" height="100" title="Beng-beng:Rp.1500"/>
+	  </a>
+
+	 </tr>
+	 
+	 <td>Beng-Beng Harga:Rp.2500
+	 </td>
+	
+	
+	 <td rowspan="4">
+	 				<a href="#!">
+	   	 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcJS17YFq1P_9CrLCK_Wz0o4P0sQ9CbzaTXj_migGvf5zGRwVnZnWPjIWu&s=10" width="120" height="100" align="center">
+	   	 </a>
+	
+	 	 		<td>Chiki:Rp.1500 </td>
+	 	 		</th>
+	 	
+   <td rowspan="4">
+   	<a href="#!">
+	 	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5si7ROIsuN_gpkdidNKRlJ5GSxMA-_vZIYg&usqp=CAU" width="110" height="100">
+	 	</a>
+	 	<td>Fruit tea:Rp.7000</td>
+	 	
+<td rowspan="4">
+				<a href="#!">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7VCMSJ0Ju4E8Y8nwcbpejBHt9SXMVzSiBA&usqp=CAU" width="110" height="100">
+	<td>Mr bread:Rp.6500 </td>
+	</a>
+	</td>
+ </table>
+	 					
+	 	</a>
+  <div class="contact-form">
+ <h4>Terimakasih sudah berbelanja di <span>Indomart</span>
+ </h4>
+
+ 
+ 
+ </div>
+</div>
+  </div>
+ </div>
+
+ 
+ 		
+ 				
+ 	<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum -->
+ 	<!-- lorem ipsum adalah teks tiruan -->
+  
+  
+  
+   	<!-- memanggil class footer dari CSS-->
+   	
+ <div class="footer">
+ 				
+  	
+ 	<div class="footer-logo">
+ 		<!-- masukkan logo/tulisan -->
+ 	  <img src= "https://upload.wikimedia.org/wikipedia/id/0/04/Logo_Indomaret.svg" width="170" height="70">
+ 	 	</div>
+ 	 
+  <div class="footer-list">
+ <!-- panggli class footer -->
+    <ul>
+   <a href="filehtml1.html">
+   <li> profile
+    </li>
+    </a>
+      <a href="filehtml2.html">
+      <li>
+      produk 
+      </li>
+      </a>
+     <a href="filehtml3.html">
+     <li>promo
+     </li>
+     </a>
+        <a href="filehtml4.html">
+     <li>layanan
+     </li>
+     </a>
+         <a href="Hubungi kami.html">
+     <li>Hubungi kami
+     </li>
+     </a>
+         <a href="filehtml5.html">
+     <li>Akun
+     </li>
+     </a>
+      </ul>
+  </div>
+ </div>
+ </div>
+
+
+     <hr>
+     <form>
+     <fieldset>
+     <legend align="center">Formulir pengerjaan:</legend>
+     <label>Kelas:</label>
+     <label>
+    <input type="radio" name="kelas" value="X-MM1"/>X-MM1</label>
+  <label>
+ <input type="radio" name="kelas" value="X-MM2"/>X-MM2 
+  </label>
+<label> <input type="radio" name="kelas" value="X-MM3"/>X-MM3
+ </label>
+ <label><input type="radio" name="kelas" value="X-MM4"/>X-MM4
+  </label>
+      <input type="submit" name="submit"value="submit">
+
+   <p>
+<label for="tanggal">tanggal pengerjaan:
+</label>
+<input type="date"
+id="tanggal" name="tanggal">
+
+
+<input type="submit"value:"submit">
+
+</p>
+<label>Nama Siswa</label>
+<select name="Nama Siswa"> 
+<option value=" ">
+				</option>
+<option value="ADINDA RISTA LIBBY HASIBUAN">ADINDA RISTA LIBBY 
+HASIBUAN
+</option>
+<option value="ADITYA SAPUTRA">ADITYA SAPUTRA
+</option>
+ <option value="AGUSTIAN SAPUTRA">AGUSTIAN SAPUTRA</option>
+ <option value="AHMAD RISKY WAHYUDI">AHMAD RISKY WAHYUDI
+ </option>
+ <option value="AISAH HERLINAH">AISAH HERLINAH
+ </option>
+<option value="ANDIKA ARYA SAPUTRA">ANDIKA ARYA SAPUTRA
+</option>
+<option value="ANDIKA FAIZ IBRAHIM">ANDIKA FAIZ IBRAHIM
+</option>
+<option value="AULIA ATIKA SARI">AULIA ATIKA SARI
+</option>
+<option value="BAGAS ADITYA DWI 
+SAPUTRA">BAGAS ADITYA DWI 
+SAPUTRA
+</option>
+<option value="CLAUDIO ARDHITYA ERWIN RABBANI">CLAUDIO ARDHITYA ERWIN 
+RABBANI
+</option>
+ <option value="DIMAS FAJAR KURNIAWAN">DIMAS FAJAR KURNIAWAN
+ </option>
+<option value="EKKY CHANDRA FERDANA">EKKY CHANDRA FERDANA
+</option>
+<option value="FERA SASA APRIANI">FERA SASA APRIANI
+</option>
+<option value="IRVAN MUNIR">IRVAN MUNIR
+</option>
+<option value="ISMI NISRINA HARMAY">ISMI NISRINA HARMAY
+</option>
+<option value="JIHAN RAHMASARI">JIHAN RAHMASARI
+</option>
+<option value="JOEFITRIAN">JOEFITRIAN
+</option>
+<option value="KUKUH WAHYU SYAHPUTRA">KUKUH WAHYU SYAHPUTRA
+</option>
+<option value="LUQMANUL HAKIM ILYASPUTRA">LUQMANUL HAKIM 
+ILYASPUTRA
+</option>
+<option value="MUHAMAD RAEYNALDI">MUHAMAD RAEYNALDI
+</option>
+<option value="MUHAMMAD DZAKI">MUHAMMAD DZAKI
+</option>
+<option value="MUHAMMAD IBNU NURUL 
+ICHSAN">MUHAMMAD IBNU NURUL 
+ICHSAN
+</option>
+<option value="MUHAMMAD IKBAL MAKSUM">MUHAMMAD IKBAL MAKSUM
+</option>
+<option value="MUHAMMAD IZZA HUSSEIN">MUHAMMAD IZZA HUSSEIN
+</option>
+<option value="NABILA SAPNA AL-ZAHRA ">NABILA SAPNA AL-ZAHRA 
+</option>
+
+<option value="RAHMALIA">RAHMALIA
+</option>
+<option value="RAMLI HIDAYAT">RAMLI HIDAYAT
+</option>
+<option value="RAVINO NOOR DURJAT" >RAVINO NOOR DURJAT
+</option>
+<option value="REHANDIKA CAHYA .D">REHANDIKA CAHYA .D
+</option>
+
+<option value="STEVANUS ANDIKA GALIH 
+SETIAWAN">STEVANUS ANDIKA GALIH 
+SETIAWAN
+</option>
+<option value="SULTHAN ABIYYU">SULTHAN ABIYYU
+</option>
+<option value="SYAH NATA RAY DIDDO 
+LENCANA">SYAH NATA RAY DIDDO 
+LENCANA
+</option>
+<option value="TUBAGUS MUHAMMAD RAFLI">TUBAGUS MUHAMMAD RAFLI
+</option>
+<option value="YANUARIUS ARMANDO">YANUARIUS ARMANDO
+</option>
+<option value="ZHARRIFFATIH FARAS 
+FADHLURRAHMAN">ZHARRIFFATIH FARAS 
+FADHLURRAHMAN
+				</option>
+
+</select>
+
+
+</form>
+</fieldset>
+
+</hr>
+
+<!--<span class="icon" onclick="setDarkMode(false)"><button>Light Mode
+</button>
+ </span>-->
+ 
+<!--span class="icon" onclick="setDarkMode(true)">
+	<button>Dark Mode
+	</button>
+	</span>-->
+	
+				<!--style>
+					
+	       #darkmode{
+           background:rgb(27, 27, 27);
+           color:white;
+           
+           }
+             #darkmode button{
+             background:red;
+             font-size:25px;
+             border-radius:5px;
+             
+             }
+             
+          </style>-->
+        
+
+
+ 
+
+ 
+ <dialog id="dialog">
+ 				<!-- dialog berfungdi untuk menampilkan sesuatu di dlm suatu -->
+      <form method="dialog">
+ 				<a href="#!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoP_4qWmUZ4eMhfVmpkD1062fzfLEr0tiaLmpzvZLz_N2-6KeAynUk-Ow&s=10"
+width="100" height="50">
+ </a>
+ 
+  <a href="#!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3jrWWedoehdCrn3VKh_3tDu8JKUA3Rtz7BQ&usqp=CAU " width="100" height="50">
+  				
+  </a>
+  <a href="#!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR248eYV-yiwM1ep9zX83grRqMai2oJNO00ig&usqp=CAU" width="100" height="50">
+  			
+  	
+  </a>
+  <a href="#!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmtk3p4fbb3uFEK4E3DzecPl4ODjkuYZxkw&usqp=CAU" width="100" height="50">
+  				
+  </a>
+  <a href="#!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyI2NS5yvM7gzc2zSD0lnDSt4zeuTtM2nGTyc7Sd7J1VkRUzixSfwZZej&s=10" width="100" height="50">
+  				
+
+  </a>
+<a href="#!">
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="100" height="50">
+</a>
+<a href="#!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSexRx8awNUqCVRXDODJy8mKkybQCxwrB_1yw&usqp=CAU" width="100" height="50">
+				
+				
+</a>
+
+ 	   <menu>
+ 		<button id="close"type="Reset">Close(X)</button>
+ 				</form>
+</menu>
+</dialog>
+
+<menu>
+<button id="click">Share:
+</button>
+				
+</menu>
+  
+	<script>
+					(function(){
+		
+				
+//ketika diklik,maka js akan mengambil element button dgn ID klik pada HTML//
+/*document get element berfungsi untuk mengambil/memanipulasi element html*/
+
+//click Id berfungsi pada saat button Id ditekan//
+clickButton=document.getElementById('click');
+
+//close Id berfungsi untuk menekan tombol,untuk menyembunyikan isi pesan/gambar//
+
+closeButton=document.getElementById('close');
+	 	
+	/*id button dialog  menampilkan isi pesan/gambar pada saat diklik*/
+	Dialog=document.getElementById('dialog');
+		
+				/*addevent berfungsi untuk mengambilsebuah aksi dari  element html button dgn id click*/
+						
+			/*Js akan menampilkan aksi untuk menampilkan gambar/pesan pada saat  button diklik*/
+	 
+clickButton.addEventListener('click',function(){
+  Dialog.show();
+  });
+ 
+				     
+
+
+		//js akan menutup kembali pesan yg sebelumnya telah ditampilkan//
+closeButton.addEventListener('click',function(){
+				Dialog.close();
+				});
+				}) ();
+	   
+	</script>
+	<label>Tinggalkan kritik/saran anda untuk perkembangan website kami </label>
+<form method="POST" action="kirim.php">
+<textarea name="comment" placeholder="ketikkan pesan/kesan anda disini"></textarea>
+				</form>
+			<form>
+		<button class="btn">Send </button>
+		<button class="btn">Cancel </button>
+     </form>
+     
+     <footer>copyright&copy:~Stevanus~
+     				
+     </footer>
+</body>
+</html>
+
+
+	
+				
+				
+
+
+				
+					
+		
